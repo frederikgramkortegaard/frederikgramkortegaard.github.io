@@ -245,42 +245,154 @@ body {
     text-decoration: underline;
 }
 
-/* Education section */
-.education-item {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-}
+        /* Experience section */
+        .experience-item {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
 
-.education-item:last-child {
-    border-bottom: none;
-}
+        .experience-item:last-child {
+            border-bottom: none;
+        }
 
-.education-item h3 {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
+        .experience-item h3 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
 
-.education-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-    gap: 10px;
-}
+        .experience-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
-.institution {
-    color: #6c757d;
-    font-style: italic;
-    font-size: 11px;
-}
+        .company {
+            color: #6c757d;
+            font-style: italic;
+            font-size: 11px;
+        }
 
-.education-item p {
-    margin-bottom: 10px;
-    font-size: 12px;
-}
+        .experience-item ul {
+            margin-left: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .experience-item li {
+            margin-bottom: 5px;
+            font-size: 12px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .experience-item li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: normal;
+        }
+
+        /* Research section */
+        .research-item {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .research-item:last-child {
+            border-bottom: none;
+        }
+
+        .research-item h3 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .research-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .research-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .research-links a {
+            font-size: 11px;
+            font-style: italic;
+        }
+
+        .research-dates {
+            margin-bottom: 10px;
+        }
+
+        .research-item ul {
+            margin-left: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .research-item li {
+            margin-bottom: 5px;
+            font-size: 12px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .research-item li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: normal;
+        }
+
+        /* Education section */
+        .education-item {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .education-item h3 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .education-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .institution {
+            color: #6c757d;
+            font-style: italic;
+            font-size: 11px;
+        }
+
+        .education-item p {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -385,9 +497,102 @@ body {
                         </ul>
                     </div>
                 </div>
-            </section>
+                                </section>
 
-            <section id="education" class="section">
+                    <section id="experience" class="section">
+                        <h2>Work Experience</h2>
+                        
+                        <div class="experience-item">
+                            <h3>Technical Lead (Contract)</h3>
+                            <div class="experience-meta">
+                                <span class="company">IHairium</span>
+                                <span class="year">January 2025 to Current</span>
+                            </div>
+                            <ul>
+                                <li>Hired to lead a targeted effort transitioning the platform from B2C to B2B, building scalable AI infrastructure and multi-tenant support.</li>
+                                <li>Extended Java 17+ Spring Boot backend to support multi-tenant B2B functionality, allowing partners to define custom diagnostic flows, recommend their products, and collect per-tenant metrics.</li>
+                                <li>Built scalable Python microservices (Flask, Docker, AWS EC2) replacing the legacy diagnostics engine, delivering low-latency inference services, complete with CI/CD and full test coverage.</li>
+                                <li>Built an AWS SQS-based producer–consumer queue to scale AI services horizontally and improve fault tolerance. Additionally, reduced inference latency by 40% through thread pooling, bottleneck profiling, memory optimization, and runtime upgrades.</li>
+                                <li>Managed a cross-functional team of three engineers across iOS, frontend, and backend, overseeing Agile workflows including sprint planning, task estimation, and code reviews.</li>
+                                <li>Coordinated with external AI developers: validating results, writing delivery specifications, generating reports, and integrating their AI models into the platform.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h3>Freelance Software Engineer</h3>
+                            <div class="experience-meta">
+                                <span class="company">Invoke</span>
+                                <span class="year">January 2025 to Current</span>
+                            </div>
+                            <ul>
+                                <li>Developed and launched a cross-platform Flutter app for a marketing client in just 3 weeks, achieving 1,500+ downloads in the first week and generating 500k+ social media impressions.</li>
+                                <li>Developed a Python/FastAPI WhatsApp bot with Recruitee and WhatsApp Cloud API integrations to automate post-sales surveys, enabling cross-department analytics, survey completion rates, question drop-offs, and engagement trends.</li>
+                                <li>Developed JavaScript/Vue.js websites for half a dozen companies, integrating with CRM systems, booking systems, and third-party APIs to streamline client operations and improve user experience.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h3>Backend Engineer</h3>
+                            <div class="experience-meta">
+                                <span class="company">Seculyze</span>
+                                <span class="year">June 2024 to June 2025</span>
+                            </div>
+                            <ul>
+                                <li>Reduced response times by 88% on high-load FastAPI endpoints through PostgreSQL query optimization, payload minimization, caching, and asynchronous task offloading with Celery - enabling efficient queuing and scalable worker orchestration.</li>
+                                <li>Built a fully automated MLOps pipeline in collaboration with AI specialists to deploy multi-tenant inference models on Azure Kubernetes, integrating canary and blue-green rollouts with build-metadata for traceability, and automating model warehousing in blob storage.</li>
+                                <li>Engineered a configurable ETL system and built a rule-based sanitation engine, converting raw security logs into compliance-aligned datasets (GDPR, NIS-2) for LLM-powered batch inference and structured audit reporting.</li>
+                                <li>Managed dozens of production rollouts across customer environments, managing infrastructure and schema migrations with Alembic, Docker, and Kubernetes; integrated CI/CD pipelines with PyTest coverage enforcement.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h3>Software Engineering Intern</h3>
+                            <div class="experience-meta">
+                                <span class="company">Universal Robots</span>
+                                <span class="year">February 2020 to August 2020</span>
+                            </div>
+                            <ul>
+                                <li>Developed kernel-level and embedded systems in C/C++ for robotics platforms, contributing domain knowledge to support predictive model feature engineering using PyTorch</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h3>Technical Consultant</h3>
+                            <div class="experience-meta">
+                                <span class="company">Findwise A/B</span>
+                                <span class="year">January 2019 to January 2020</span>
+                            </div>
+                            <ul>
+                                <li>Created a Python microservice for GDPR-compliant data sanitation, processing 130M+ emails with automated testing and CI/CD pipeline.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="research" class="section">
+                        <h2>Research</h2>
+                        
+                        <div class="research-item">
+                            <h3>Research Scientist</h3>
+                            <div class="research-meta">
+                                <span class="institution"><a href="https://adinlab.github.io/" target="_blank">The Adaptive Intelligence Lab (ADIN)</a> · University of Southern Denmark</span>
+                                <div class="research-links">
+                                    <a href="https://raw.githubusercontent.com/frederikgramkortegaard/kish/refs/heads/master/Thesis.pdf?raw=true" target="_blank">Thesis</a>
+                                    <a href="https://github.com/frederikgramkortegaard/kish" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="research-dates">
+                                <span class="year">September 2023 to June 2024</span>
+                            </div>
+                            <ul>
+                                <li>Developed OrthAdam, a novel Adam optimizer variant that achieved ~2% accuracy improvements compared to state-of-the-art AdamW and AdamP optimizers on CIFAR-100, CIFAR-10, and SVHN datasets across ResNet18, DenseNet121, and ResNeXt50 architectures.</li>
+                                <li>Created AttentionSplit, a hybrid neural network layer combining recurrence and attention mechanisms for temporal data analysis, achieving marginally better accuracies than state-of-the-art LSTM and Transformer models on Acrobot-v1, CartPole-v1, and MountainCar-v0 environments - particularly promising as a first iteration of the research.</li>
+                                <li>Conducted comprehensive evaluation across computer vision benchmarks (ResNet18, DenseNet121, ResNeXt50) and reinforcement learning environments (Acrobot, CartPole, MountainCar, HalfCheetah, Walker2D) to validate architectural innovations.</li>
+                                <li>Published research findings on the importance of scale-invariant momentum-based algorithms and the potential of attention-recurrence combinations in deep learning applications.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="education" class="section">
                 <h2>Education</h2>
                 
                 <div class="education-item">
