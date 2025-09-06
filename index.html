@@ -450,25 +450,13 @@ body {
                 <h2>About</h2>
                 <p>I am a software engineer who builds systems from the ground up - from programming languages and compilers to distributed AI infrastructure. Currently leading technical teams at <a href="https://ihairium.com" target="_blank">IHairium</a>, I specialize in high-performance distributed systems, low-latency applications, scalable AI inference, and complex platform architectures.</p>
             </section>
-
+            
             <section id="projects" class="section">
                 <h2>Featured Projects</h2>
                 
                 <div class="projects-grid">
-                    <div class="project">
-                        <h3>Tribune: Distributed Multi-Party Computation Library</h3>
-                        <div class="project-meta">
-                            <span class="tech-stack">C++ · Distributed Systems · Cryptography</span>
-                            <a href="https://github.com/frederikgramkortegaard/tribune" target="_blank">GitHub</a>
-                        </div>
-                        <ul>
-                            <li>Built a modular C++ framework for secure multi-party computation (SMPC) with plug-in interfaces for cryptographic protocols and data-sharding strategies.</li>
-                            <li>Engineered a peer-to-peer producer–consumer protocol where clients exchange masked data shards, while a coordinating server re-aggregates them to reveal only the global result-preserving privacy of individual inputs.</li>
-                            <li>Demonstrated the framework by training a federated machine-learning model that performed linear regression on device usage patterns, enabling predictive analytics without exposing personal routines or raw client data.</li>
-                        </ul>
-                    </div>
 
-                    <div class="project">
+=                <div class="project">
                         <h3>Eridu: A C-Like Programming Language</h3>
                         <div class="project-meta">
                             <span class="tech-stack">C · Compiler Design · Python</span>
@@ -481,6 +469,19 @@ body {
                             <li>Developed a C-like statically-typed programming language from scratch in C, supporting first-class functions, abstract data types, and multi-paradigm constructs.</li>
                             <li>Built custom code generation system, directly outputting x86-64 AT&T assembly with custom intermediate representation, stack frame management, and memory allocation.</li>
                             <li>Built a custom testing framework in Python with a domain-specific language for inline test specification, enabling test-driven development by validating expected outputs of code snippets.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project">
+                        <h3>Tribune: Distributed Multi-Party Computation Library</h3>
+                        <div class="project-meta">
+                            <span class="tech-stack">C++ · Distributed Systems · Cryptography</span>
+                            <a href="https://github.com/frederikgramkortegaard/tribune" target="_blank">GitHub</a>
+                        </div>
+                        <ul>
+                            <li>Built a modular C++ framework for secure multi-party computation (SMPC) with plug-in interfaces for cryptographic protocols and data-sharding strategies.</li>
+                            <li>Engineered a peer-to-peer producer–consumer protocol where clients exchange masked data shards, while a coordinating server re-aggregates them to reveal only the global result-preserving privacy of individual inputs.</li>
+                            <li>Demonstrated the framework by training a federated machine-learning model that performed linear regression on device usage patterns, enabling predictive analytics without exposing personal routines or raw client data.</li>
                         </ul>
                     </div>
 
