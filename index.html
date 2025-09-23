@@ -254,6 +254,13 @@ body {
 
         .experience-item:last-child {
             border-bottom: none;
+            padding-bottom: 5px;
+        }
+
+        .experience-item.no-border {
+            border-bottom: none;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
         }
 
         .experience-item h3 {
@@ -395,6 +402,10 @@ body {
         }
 
         /* Skills section */
+        #skills {
+            padding-bottom: 20px;
+        }
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -510,7 +521,7 @@ body {
     <ul>
         <li>Developed a blockchain platform from scratch in Go with SHA-256 proof-of-work consensus, dynamic difficulty adjustment, longest-chain fork resolution, and atomic state transitions using copy-validate-replace pattern.</li>
         <li>Built P2P networking layer with decentralized peer discovery, headers-first chain synchronization, connection pooling with timeout management, and transaction mempool with fee-based priority ordering.</li>
-        <li>Created Marigold smart contract language with compiler pipeline (lexer, parser, type checker) and custom stack-based VM featuring 256-bit arithmetic, gas metering, persistent storage, and blockchain context integration.</li>
+        <li>Created the Marigold smart contract language with compiler pipeline (lexer, parser, type checker) and custom stack-based VM featuring 256-bit arithmetic, gas metering, persistent storage, and blockchain context integration.</li>
     </ul>
 </div>
                     <div class="project">
@@ -574,7 +585,7 @@ body {
                             </ul>
                         </div>
 
-                        <div class="experience-item">
+                        <div class="experience-item no-border">
                             <h3>Software Engineering Intern</h3>
                             <div class="experience-meta">
                                 <span class="company">Universal Robots</span>
