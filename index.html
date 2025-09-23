@@ -174,7 +174,7 @@ body {
 }
 
 .project li {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-size: 12px;
     position: relative;
     padding-left: 15px;
@@ -284,7 +284,7 @@ body {
         }
 
         .experience-item li {
-            margin-bottom: 5px;
+            margin-bottom: 8px;
             font-size: 12px;
             position: relative;
             padding-left: 15px;
@@ -394,21 +394,50 @@ body {
             font-size: 12px;
         }
 
+        /* Skills section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .skill-category {
+            flex: 1;
+        }
+
+        .skill-category h3 {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .skill-items {
+            font-size: 12px;
+            line-height: 1.8;
+            color: #555;
+        }
+
 /* Responsive design */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
     }
-    
+
     .header {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .profile-section {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .nav {
@@ -565,6 +594,36 @@ body {
                             <ul>
                                 <li>Created a Python microservice for GDPR-compliant data sanitation, processing 130M+ emails with automated testing and CI/CD pipeline.</li>
                             </ul>
+                        </div>
+                    </section>
+
+                    <section id="skills" class="section">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Languages</h3>
+                                <div class="skill-items">
+                                    Python • Java • C/C++ • Go<br>
+                                    SQL (PostgreSQL) • NoSQL (MongoDB)
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3>Libraries / Frameworks</h3>
+                                <div class="skill-items">
+                                    FastAPI • Flask • Spring Boot<br>
+                                    Celery • RabbitMQ • Boost<br>
+                                    PyTorch • TensorFlow • OpenCV
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h3>Tools / Platforms</h3>
+                                <div class="skill-items">
+                                    Git • Docker • Kubernetes<br>
+                                    Azure • AWS • Terraform<br>
+                                    Prometheus • Grafana • Linux
+                                </div>
+                            </div>
                         </div>
                     </section>
 
